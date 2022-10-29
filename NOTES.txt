@@ -1,0 +1,3 @@
+10.29 at 1330: have done nothing yet
+
+start with day 5 exploring-react-contect
