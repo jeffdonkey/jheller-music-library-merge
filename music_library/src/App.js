@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar'
 
 // MAIN REACT COMPONENT
 function App(){
+    
     let [search, setSearch] = useState('')
     let [message, setMessage] = useState('Search for Music!')
     let [data, setData] = useState([])
@@ -13,18 +14,18 @@ function App(){
 
     useEffect(() => {
         if(search) {
-            const fetchData= async () => {
+            const fetchData = async () => {
                 document.title = `${search} music`
-                const response = await fetch (API_URL + search)
+                const response = await fetch(API_URL + search)
                 const resData = await response.json()
                 if (resData.results.length > 0) {
                     return setData(resData.results)
                 } else {
-                    return setMessage('Not Found')
+                    return setMessage('Not Found.')
                 }
             }
+            fetchData()
         }
-        fetchData()
     }, [search])
 
     const handleSearch = (e, term) => {
@@ -34,13 +35,11 @@ function App(){
 
     return (
         <div>
-            <SearchBar handleSearch = {handleSearch}/>
+            <SearchBar handleSearch={handleSearch} />
             {message}
-            <Gallery />
+            <Gallery data={data} />
         </div>
     )
 }
 
-// EXPORT, DUH
 export default App
-
