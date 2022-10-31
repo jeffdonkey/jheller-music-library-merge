@@ -12,6 +12,8 @@ start with day 5 exploring-react-contect
         main
         withContext
     to switch between branches use "git switch main" or "git switch withContext"
-    
 
-Day 5, part2: adding 'useRef()' hook
+
+Day 5, part 2: adding 'useRef()' hook
+
+Day 5, part "After Class": using react router dom
