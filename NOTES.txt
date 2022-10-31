@@ -17,3 +17,5 @@ start with day 5 exploring-react-contect
 Day 5, part 2: adding 'useRef()' hook
 
 Day 5, part "After Class": using react router dom
+    creating new branch called 'with_router'
+    
