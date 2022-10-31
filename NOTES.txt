@@ -1,3 +1,19 @@
+Day 5, part 1: adding "context".  "Context" is used to to make some of the state
+variables "global".  Using Context can replace props.  If you set a Compnonet to use Context that Compnonet
+no longer uses props.
+
 10.29 at 1330: have done nothing yet
 
 start with day 5 exploring-react-contect
+
+10.31 at 1000: trying to do day 5 "with fork"
+    ran 'git checkout -b withContext' from file jheller-music-lib-2
+    there are now two branches:
+        main
+        withContext
+    to switch between branches use "git switch main" or "git switch withContext"
+
+
+Day 5, part 2: adding 'useRef()' hook
+
+Day 5, part "After Class": using react router dom
