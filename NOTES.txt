@@ -1,4 +1,4 @@
-Day 5 is adding "context".  "Context" is used to to make some of the state
+Day 5, part 1: adding "context".  "Context" is used to to make some of the state
 variables "global".  Using Context can replace props.  If you set a Compnonet to use Context that Compnonet
 no longer uses props.
 
@@ -12,4 +12,6 @@ start with day 5 exploring-react-contect
         main
         withContext
     to switch between branches use "git switch main" or "git switch withContext"
+    
 
+Day 5, part2: adding 'useRef()' hook
