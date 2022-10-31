@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
+import { DataContext } from './context/DataContext'
 
 // MAIN REACT COMPONENT
 function App(){
@@ -37,9 +38,12 @@ function App(){
         <div>
             <SearchBar handleSearch={handleSearch} />
             {message}
-            <Gallery data={data} />
+            <DataContext.Provider value={data} >
+                <Gallery />
+            </DataContext.Provider>
         </div>
     )
 }
+// 'DataContext.Provider': the React Componet 'App' is the 'Provider' of context for 'DataContext'
 
 export default App
