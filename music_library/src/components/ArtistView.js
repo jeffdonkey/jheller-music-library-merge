@@ -17,17 +17,16 @@ function ArtistView () {
         fetchData()
     }, [id])
 
-    const justAlbums = artistData.filter(entity => entity.collectiontype === 'Album')
-
-    const renderAlbums = justAlbums.map((album, i) => {
-        return (
-            <div key={i}>
-                <Link to={`/album/${album.collectionId}`}>
-                <p>{album.collectionName}</p>
-                </Link>
-            </div>
-        )
-    })
+    const renderAlbums = artistData.filter(entity => entity.collectionType === 'Album')
+        .map((album, i) => {
+            return (
+                <div key={i}>
+                    <Link to={`/album/${album.collectionId}`}>
+                        <p>{album.collectionName}</p>
+                    </Link>
+                </div>
+            )
+        })
 
     const navButtons = () => {
         return (
