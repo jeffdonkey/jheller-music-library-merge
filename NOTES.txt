@@ -28,3 +28,5 @@ Day 6, part 1 code along: improve interface
 Day 6, "After Class": using "suspense"
     cerating a new branc called "with_suspense"
     npm install react@expermental react dom@experimental
+    totally trashed "with_suspense" redo branch "with_suspense_2"
+    
