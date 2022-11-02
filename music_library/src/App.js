@@ -5,6 +5,7 @@ import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import AlbumView from './components/AlbumView'
 import ArtistView from './components/ArtistView'
+import { useNavigate } from 'react-router-dom'
 
 // MAIN REACT COMPONENT
 function App(){
@@ -47,7 +48,7 @@ function App(){
                         </React.Fragment>
                     } />
                     <Route path="/album/:id" element={< AlbumView />} />
-                    <Route path="/artist:id" element={< ArtistView />} />
+                    <Route path="/artist/:id" element={< ArtistView />} />
                 </Routes>
             </Router>
         </div>

@@ -18,4 +18,8 @@ Day 5, part 2: adding 'useRef()' hook
 
 Day 5, part "After Class": using react router dom
     creating new branch called 'with_router'
-    
+
+Day 6, Part 1: code-along rr-6-improve-a-music-library-interface
+    this in on branch "with_router"
+    note that there is a proxy server used for this.  Look in local /c/Desktop/Boot_Camp/BC_RandR/d6-fake-server/RR-Improve-a-Music-Library-Interface
+    directions for starting proxy server is found in it's README.md
