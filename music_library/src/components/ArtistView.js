@@ -17,7 +17,7 @@ function ArtistView () {
         fetchData()
     }, [id])
 
-    const justAlbums = artistData.filter(entry => entry.collectiontype === 'Album')
+    const justAlbums = artistData.filter(entity => entity.collectiontype === 'Album')
 
     const renderAlbums = justAlbums.map((album, i) => {
         return (
