@@ -1,5 +1,5 @@
 const fetchSearch = (searchTerm) => {
-    return fetch(`http://localhost:4000/main/${searchTerm}`)
+    return fetch(`https://itunes.apple.com/${searchTerm}`)
     .then(response => response.json())
     .then(resData => resData.results)
 }
@@ -31,3 +31,4 @@ export const createResource = (searchTerm) => {
         result: wrapPromise(fetchSearch(searchTerm))
     }
 }
+
